@@ -1,4 +1,4 @@
-﻿/** Console.WriteLine("Bonjour ! Comment t'appeles-tu ?");
+﻿Console.WriteLine("Bonjour ! Comment t'appeles-tu ?");
 string? rep = Console.ReadLine();
 
 Console.WriteLine("Bonjour " + rep + " !");
@@ -28,7 +28,7 @@ if (annéeNais >= annéeMin && annéeNais <= DateTime.Today.Year)
     else
         tranche = "plus de 55 ans ";*/
 
-   /* switch (age)
+   switch (age)
     {
         case < 25:
             tranche = "moins de 25 ans";
@@ -59,7 +59,7 @@ rep = Console.ReadLine();
 
 bool reduc = (rep == "O");
 
-Console.WriteLine(annéeNais < 2000 ? "Tu es né au 20ème siècle" : "Tu es née au 21 ème siècle");*/
+Console.WriteLine(annéeNais < 2000 ? "Tu es né au 20ème siècle" : "Tu es née au 21 ème siècle");
 
 //---------------------------------------------------------------------------------------------------
 // Les tableaux 
@@ -143,6 +143,28 @@ foreach (byte score in scoresJ1)
 
 Console.WriteLine($"Le premier joueur a remporté {nbJeux} jeux");
 
+// Instruction do...while
+bool saisieOK = false;
+do
+{
+    Console.WriteLine("Saisissez un chiffre entre 1 et 3");
+    string? rep2 = Console.ReadLine();
+    if (rep == "1" || rep == "2" || rep == "3")
+        saisieOK = true;
+
+} while (!saisieOK);
+
+// Instruction while
+while (!saisieOK)
+{
+    Console.WriteLine("Saisissez un chiffre entre 1 et 3");
+    string? rep2 = Console.ReadLine();
+    if (rep == "1" || rep == "2" || rep == "3")
+        saisieOK = true;
+}
 
 
+// for et foreach permet de parcourir un tableau avec les instructions break et continue
+
+// while et do while permet de repéter un traitement tant q'une condition est satisfaite
 Console.ReadKey();
