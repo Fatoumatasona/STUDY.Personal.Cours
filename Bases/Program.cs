@@ -131,6 +131,18 @@ for (int s = 0; s < scoresJ1.Length; s++)
     Console.WriteLine($"set {s + 1}");
 }
 
+// Instruction foreach elle permet de parcourit un tableau ou une collection d'éléments sans incrémenter d'indice
+// Mais aussi avec certaines limitations. Exepmle : parcourir le tableau à l'envers ou comparer un elt à un indice donné 
+
+// Instruction foreach
+int nbJeux = 0;
+foreach (byte score in scoresJ1)
+{
+    nbJeux += score;
+}
+
+Console.WriteLine($"Le premier joueur a remporté {nbJeux} jeux");
+
 
 
 Console.ReadKey();
