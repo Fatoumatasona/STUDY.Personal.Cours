@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Bonjour ! Comment t'appeles-tu ?");
+﻿/** Console.WriteLine("Bonjour ! Comment t'appeles-tu ?");
 string? rep = Console.ReadLine();
 
 Console.WriteLine("Bonjour " + rep + " !");
@@ -28,7 +28,7 @@ if (annéeNais >= annéeMin && annéeNais <= DateTime.Today.Year)
     else
         tranche = "plus de 55 ans ";*/
 
-    switch (age)
+   /* switch (age)
     {
         case < 25:
             tranche = "moins de 25 ans";
@@ -59,7 +59,7 @@ rep = Console.ReadLine();
 
 bool reduc = (rep == "O");
 
-Console.WriteLine(annéeNais < 2000 ? "Tu es né au 20ème siècle" : "Tu es née au 21 ème siècle");
+Console.WriteLine(annéeNais < 2000 ? "Tu es né au 20ème siècle" : "Tu es née au 21 ème siècle");*/
 
 //---------------------------------------------------------------------------------------------------
 // Les tableaux 
@@ -95,3 +95,32 @@ scores[1, 1] = 6;
 scores[0, 2] = 7;
 
 byte?[,] scores2 = { { 2, 6 }, { 7, 3 },{ 5, 9 } };
+
+//------------------------------------------------------------------------------------
+// Iterations
+for (int s = 0; s < scoresJ1.Length; s++)
+{
+    Console.WriteLine($"set {s + 1} : {scoresJ1[s]} - {scoresJ2[s]}");
+}
+
+Console.WriteLine();
+
+for (int s = scoresJ1.Length -1; s >= 0; s--)
+{
+    Console.WriteLine($"set {s + 1} : {scoresJ1[s]} - {scoresJ2[s]}");
+}
+
+Console.WriteLine();
+int premierSetPerdu = 0;
+for (int s = 0; s < scoresJ1.Length; s++)
+{
+    if (scoresJ1[s] < scoresJ2[s])
+    {
+        premierSetPerdu = s + 1;
+        break;
+    }
+}
+Console.WriteLine($"N° du premier set perdu par le joueur 1 : {premierSetPerdu}");
+
+
+Console.ReadKey();
