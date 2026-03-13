@@ -17,6 +17,8 @@ if (annéeNais >= annéeMin && annéeNais <= DateTime.Today.Year)
     Console.WriteLine($"Tu as ou vas avoir {age} ans en {DateTime.Today.Year}");
 
     string tranche = string.Empty;
+
+    /*
     if (age <= 25)
         tranche = "Tu as moins de 25 ans";
     else if (age >= 25 && age < 40)
@@ -24,7 +26,26 @@ if (annéeNais >= annéeMin && annéeNais <= DateTime.Today.Year)
     else if (age >= 40 && age < 55)
         tranche = "40 - 55 ans ";
     else
-        tranche = "plus de 55 ans ";
+        tranche = "plus de 55 ans ";*/
+
+    switch (age)
+    {
+        case < 25:
+            tranche = "moins de 25 ans";
+            break;
+
+        case < 40:
+            tranche = "25 - 40 ans";
+            break;
+
+        case < 55:
+            tranche = "40 - 55 ans";
+            break;
+
+        default:
+            tranche = "plus de 55 ans";
+            break;
+    }
 
     Console.WriteLine($"Ta tranche d'âge est : {tranche}");
 }
