@@ -60,3 +60,21 @@ rep = Console.ReadLine();
 bool reduc = (rep == "O");
 
 Console.WriteLine(annéeNais < 2000 ? "Tu es né au 20ème siècle" : "Tu es née au 21 ème siècle");
+
+
+/** 
+ * Astuces visual studio
+ * 
+ * Intellisense est un système d'aide à la saisie de code que possède visual studio.
+ * Depuis 2022, visual studio a embarqué une IA qui vient complèter intellisense classique pour complèter des 
+ * lignes de commandes et des blocs de codes entiers.
+ * Mais cette IA consomme cependant pas de ressources (et donc la batterie si tu as un ordi portable), 
+ * et le code proposé n'est pas toujours pertinent
+ * 
+ * Réindenter du code avec ctrl + K+ D
+ * 
+ * Déplacement de code avec ALT + flèche haut ou bas
+ * 
+ * Insérer un extrait de code 
+ * Visual studio propose un certain nombre de raccourci appélé snippets en anglais comme cw suivi de 2 tabulations
+ */
