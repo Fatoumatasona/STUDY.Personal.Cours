@@ -122,5 +122,15 @@ for (int s = 0; s < scoresJ1.Length; s++)
 }
 Console.WriteLine($"N° du premier set perdu par le joueur 1 : {premierSetPerdu}");
 
+Console.WriteLine("Sets perdus par le joueur 1 :");
+for (int s = 0; s < scoresJ1.Length; s++)
+{
+    if (scoresJ1[s] > scoresJ2[s])
+        continue;
+
+    Console.WriteLine($"set {s + 1}");
+}
+
+
 
 Console.ReadKey();
