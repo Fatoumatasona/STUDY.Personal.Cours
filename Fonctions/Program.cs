@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int nbMots = OutilsTexte.CompterMots("j'aime le C#");
         }
     }
 }
