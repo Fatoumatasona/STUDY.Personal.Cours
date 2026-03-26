@@ -11,7 +11,6 @@
             Console.WriteLine("Valeur maxi : " + max1);
 
             string traduction = OutilsTexte.Traduire("J'aime le C#");
-
         }
     }
 }
